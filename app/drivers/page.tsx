@@ -1,4 +1,4 @@
-const Page = () => {
+const drivers = () => {
   return (
     <div>
       <h2>Driver Page</h2>
@@ -6,4 +6,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default drivers;
