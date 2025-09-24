@@ -1,11 +1,13 @@
 import { memo } from "react";
 import Link from "next/link";
+import car from "./car.jpg";
+import Image from "next/image";
 
 const Page = () => {
   return (
     <div className="relative w-full h-[867px] rounded-lg bg-black mb-2">
       
-      <div className="absolute top-4 left-1/2 transform -translate-x-1/2 w-[95%] h-[77px] flex items-center justify-between rounded-lg border border-white bg-[#D7D7D775] px-6 py-2">
+      <div className="absolute top-4 left-1/2 transform -translate-x-1/2 w-[95%] h-[77px] flex items-center justify-between rounded-lg border border-white bg-[#D7D7D775] px-6 py-2 z-50">
         
         <div>
           <p
@@ -36,7 +38,7 @@ const Page = () => {
       </div>
 
      
-      <div className="absolute top-40 left-16 text-left max-w-[600px]">
+      <div className="absolute top-40 left-16 text-left max-w-[600px] z-50">
         <h1 className="text-5xl font-bold leading-snug text-yellow-400">
           Luxury Rides <br />
           <span className="text-pink-200">for Women, by Women.</span>
@@ -66,10 +68,11 @@ const Page = () => {
       </div>
 
     
-      <img
-        src="/luxury-car.jpg"
+      <Image
+        src={car as any}
         alt="Luxury Car"
-        className="absolute right-0 bottom-0 w-[60%] h-auto object-cover rounded-lg"
+        // className="absolute right-0 bottom-0 w-[60%] h-auto object-cover rounded-lg"
+        className="relative w-full h-[867px] rounded-lg z-0 opacity-25"
       />
     </div>
   );
